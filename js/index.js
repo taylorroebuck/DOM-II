@@ -34,7 +34,13 @@ document.querySelectorAll(".intro h2").forEach(el => {
     })
 })
 
-//mousemove(5)
+//load(5)
+// window.addEventListener("load", () => {
+//     alert("Turn back while you can!");
+// })
+
+//resize(6)
+const 
 
 //stop propagation
 const body = document.querySelector('body');
