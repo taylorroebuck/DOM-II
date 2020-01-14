@@ -40,7 +40,12 @@ document.querySelectorAll(".intro h2").forEach(el => {
 // })
 
 //resize(6)
-const 
+const scaryBus = document.querySelector(".img-content img");
+console.log(scaryBus);
+
+window.addEventListener("resize", () => {
+    scaryBus.src="https://images.unsplash.com/photo-1548857925-ffaee7590b56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80"
+})
 
 //stop propagation
 const body = document.querySelector('body');
