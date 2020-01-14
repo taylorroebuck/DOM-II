@@ -53,9 +53,17 @@ contentSection.addEventListener("click", () => {
 })
 
 //preventDefault
-const stopNavLink = document.querySelectorAll("");
+// const stopNavLink = document.querySelectorAll(".nav-link");
+const navLinks = document.querySelectorAll(".nav-link");
 
-stopNavLink.addEventListener("click", (stop) => {
-    stop.preventDefault();
-    console.log("stopped nav link")
+navLinks.forEach((navLinks) => {
+    navLinks.addEventListener("click", (event) => {
+        event.preventDefault();
+        console.log("stopped refresh");
+    });
 })
+
+// stopNavLink.addEventListener("click", (stop) => {
+//     stop.preventDefault();
+//     console.log("stopped nav link")
+// })
