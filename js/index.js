@@ -80,7 +80,7 @@ document.querySelectorAll("p").forEach(el => {
 });
 
 //scroll(10)
-const images = document.querySelector(".intro img");
+const images = document.querySelector(".img-content img");
 
 window.addEventListener("scroll", () => {
     images.style.display = "none";
