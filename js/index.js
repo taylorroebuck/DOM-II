@@ -79,7 +79,12 @@ document.querySelectorAll("p").forEach(el => {
     });
 });
 
+//scroll(10)
+const images = document.querySelector(".intro img");
 
+window.addEventListener("scroll", () => {
+    images.style.display = "none";
+});
 
 //stop propagation
 const body = document.querySelector('body');
