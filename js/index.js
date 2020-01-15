@@ -57,6 +57,23 @@ document.querySelectorAll(".btn").forEach(el => {
     })
 })
 
+//drag/drop(8)
+const adventureAwaits = document.querySelector(".inverse-content img");
+
+adventureAwaits.addEventListener('dragend', moveImage);
+function moveImage() {
+    this.style.display = 'none';
+    const imgMoved = document.createElement('img');
+    imgMoved.src= "https://live.staticflickr.com/8039/29090266354_dcffd09f38_b.jpg";
+    imgMoved.style.width = "35%";
+    imgMoved.style.borderRadius = "10px";
+    imgMoved.style.padding = "1%";
+    const newAdventure = document.querySelector('.inverse-content');
+    newAdventure.prepend(imgMoved);
+};
+
+
+
 //stop propagation
 const body = document.querySelector('body');
 
