@@ -47,6 +47,16 @@ window.addEventListener("resize", () => {
     scaryBus.src="https://images.unsplash.com/photo-1548857925-ffaee7590b56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80"
 })
 
+//mousemove(7)
+document.querySelectorAll(".btn").forEach(el => {
+    el.addEventListener("mousemove", () => {
+        el.style.textTransform = "uppercase";
+        el.textContent = "This bus only goes to Cleveland! Scary!";
+        el.style.color = "red";
+        el.style.backgroundColor = "black";
+    })
+})
+
 //stop propagation
 const body = document.querySelector('body');
 
