@@ -117,3 +117,13 @@ navLinks.forEach((navLinks) => {
 //     stop.preventDefault();
 //     console.log("stopped nav link")
 // })
+
+//greensock
+
+const topContent = document.querySelector(".nav-container h1");
+
+console.log(topContent);
+
+topContent.addEventListener("click", () => {
+    gsap.to(".logo-heading", {duration: 2, x: 250});
+})
