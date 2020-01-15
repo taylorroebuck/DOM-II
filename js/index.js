@@ -60,7 +60,7 @@ document.querySelectorAll(".btn").forEach(el => {
 //drag/drop(8)
 const adventureAwaits = document.querySelector(".inverse-content img");
 
-adventureAwaits.addEventListener('dragend', moveImage);
+adventureAwaits.addEventListener('dragstart', moveImage);
 function moveImage() {
     this.style.display = 'none';
     const imgMoved = document.createElement('img');
@@ -71,6 +71,13 @@ function moveImage() {
     const newAdventure = document.querySelector('.inverse-content');
     newAdventure.prepend(imgMoved);
 };
+
+//keydown(9)
+document.querySelectorAll("p").forEach(el => {
+    window.addEventListener("keydown", () => {
+        el.textContent = "No wifi! Noooo!";
+    });
+});
 
 
 
